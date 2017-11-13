@@ -1,4 +1,4 @@
-import UIKit
+// import UIKit
 //: # Inheritance
 class Vehicle{
     var currentSpeed = 0.0

@@ -1,17 +1,12 @@
-//: Playground - noun: a place where people can play
-
 import UIKit
-
-var str = "Hello, playground"
-
-
+//: # Basic Syntax
 let three = 3
- let pointOneFour = 0.14169
+let pointOneFour = 0.14169
 
 let pi = Double(three) + pointOneFour
 
 /*:
- # Optional Operation
+ ### Optional Operation
  */
 
 let number : Int? = 3
@@ -40,7 +35,7 @@ if let definiteString = assumedString{
 }
 
 /*:
- # Range Operation
+ ### Range Operation
  - Note:So, **"..."** means include 5, **"..<"**µ  means not inclue 5
  */
 for index in 1...5{
@@ -51,7 +46,7 @@ for index in 1..<5{
 }
 
 /*:
- # String
+ ### String
  - Note:multiple String
  */
 
@@ -77,13 +72,16 @@ print("unusualMenagerie has \(unusualMenagerie.characters.count) characters")
 
 /*:
  *****
- # Collection Type(集合类型)
+ ## Collection Type(集合类型)
  - Note: Three Primary Type : **Array**, **Sets**, **Dictionary(Map)**
  ### 1.Array
  Array<Element>
  */
-var someInt = [Int]()
+var someInt = [Int]() //真的是这样子的,要启动一个array只能这个样子,而不能var someInt:[Int] 这个样子，java: int[] array = new int[number], int[] array = {....}
+var someInt4:[Int] = [] //也可以这样启动，要有初始启动项
 print("OK so we initialize a Array with its size is \(someInt.count) number")
+print("OK so we initialize a Array with its size is \(someInt4.count) number")
+//print("OK so we initialize a Array with its size is \(someInt4.count) number")
 //And now we can append a number into the someInt
 someInt.append(3)
 //we also can do this to initialize a Array
